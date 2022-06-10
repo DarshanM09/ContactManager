@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	
+	<section>
+	
+	<div class="container text-center">
+	<div class="card">
+	
+	<div class="card-body my-5">
+	
+	<img style="height: 150px; width: 150px;" class="my_profile_pic"
+						src="#" th:src="@{'/images/images.png'}"
+						alt="profile image" />
+	
+	
+	<div>
+	<h1 class="text-center mt-3 text-secondary font-weight-light"> Welcome <span th:text="${user.name}"></span> </h1>
+	<a  th:href="@{/user/add-contact}" class="btn btn-primary mt-4" >Add contact</a>
+	
+	
+	</div>
+	
+	</div>
+	
+	</div>
+	
+	
+	</div>
+</section>
+	
+	
+	
+	
+</body>
+</html>

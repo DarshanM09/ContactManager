@@ -1,0 +1,129 @@
+body {
+	background-color: lightblue;
+}
+
+.bg-primary {
+	background-color: #ADD8E6;
+}
+
+.banner {
+	width: 100%;
+	height: 93vh;
+	background: url(../images/Banner2.jpg);
+	background-size: cover;
+	color: white;
+}
+
+.my-card {
+	padding: 20px;
+}
+
+.my-new {
+	background: url(../images/reg.jpg);
+	background-size: cover;
+}
+
+.divider:after, .divider:before {
+	content: "";
+	flex: 1;
+	height: 1px;
+	background: #eee;
+}
+
+.h-custom {
+	height: calc(100% - 73px);
+}
+
+@media ( max-width : 450px) {
+	.h-custom {
+		height: 100%;
+	}
+}
+
+
+
+/* side bar design */
+
+@media only screen and (max-width:600px){
+	.sidebar{
+	display: none;
+	width: 80%!important;
+	background: white;
+	height: 100vh;
+	position: fixed;
+	padding-top: 20px;
+	
+	
+	}
+	.content{
+	margin-left: 0%!important;
+	
+	}
+}
+
+.sidebar{
+	
+	width  :20%;
+	background:white;
+	height:100%;
+	position: fixed;
+	padding-top: 45px;
+}
+
+.sidebar a{
+	
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+	
+}
+
+.sidebar a:hover{
+	background: #e2e2e2;
+	
+}
+
+.sidebar.divider{
+
+	height:  .5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+
+	
+
+	}
+
+
+
+
+.content{
+	
+	margin-left: 22%;
+}
+
+
+
+.sidebar .crossBtn{
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size: 36px;
+	
+	cursor: pointer;
+	
+}
+
+.my_profile_pic{
+	
+	width: 30px;
+	height: 30px;
+	object-fit:cover;
+	border-radius: 50%;
+	
+}
+
+
+
